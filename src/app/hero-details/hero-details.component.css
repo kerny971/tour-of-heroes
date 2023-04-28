@@ -1,0 +1,58 @@
+*{
+    font-weight: 400;
+}
+
+h2 span {
+    font-weight: 600;
+    display: inline-block;
+    margin-left: .2em;
+    padding-bottom: .2em;
+    border-bottom: 2px solid;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    transform: translateY(.35em);
+}
+
+span:first-child {
+    font-weight: 200;
+}
+
+div:first-child {
+    padding-top: 1.5em;
+}
+
+ul span{
+    display: block;
+    margin: .4em 0;
+}
+
+ul li {
+    padding: .5em 1em;
+    margin-bottom: .5em;
+    font-family: "Montserrat", sans-serif;
+    font-style: italic;
+    position: relative;
+}
+
+ul li::before {
+     font-family: "Material Icons";
+     content: "\e244";
+     display: block;
+     position: absolute;
+     transform: translate(-1.2em, -.1em);
+ }
+
+
+
+
+
+.hero {
+    color: var(--green-color);
+    font-weight: 600;
+}
+
+.vilain {
+    color: var(--red-color);
+    font-weight: 600;
+}

@@ -1,0 +1,12 @@
+a {
+    color: var(--green-color);
+}
+
+a:hover {
+    color: var(--green-color-opc);
+}
+
+ul li a h4::before {
+    content: "\e885";
+}
+

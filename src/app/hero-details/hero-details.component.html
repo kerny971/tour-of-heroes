@@ -1,0 +1,12 @@
+<div>
+  <span>identifiant n°</span> <span class="{{ clss }}"> {{ hero.id }} </span>
+  <h2>Détails de <span class="{{ clss }}">{{ hero.name | uppercase }}</span></h2>
+  <div>
+    <ul>
+      <span>Citation: </span>
+      <li class="{{ clss }}" *ngFor="let p of hero.power">
+        {{ p }}
+      </li>
+    </ul>
+  </div>
+</div>

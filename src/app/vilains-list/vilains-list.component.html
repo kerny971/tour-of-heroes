@@ -1,0 +1,17 @@
+<section>
+  <div>
+    <ul class="heroes">
+      <li *ngFor="let hero of vilains" [class.selected]="selectedHero == hero" (click)="selectHero(hero)">
+        <a>
+          <h4>
+            <span class="badge">{{ hero.id }}</span>__{{ hero.name | uppercase }}
+          </h4>
+        </a>
+      </li>
+    </ul>
+  </div>
+
+  <div *ngIf="selectedHero">
+    <app-hero-details [clss]="clss" [hero]="selectedHero"></app-hero-details>
+  </div>
+</section>
